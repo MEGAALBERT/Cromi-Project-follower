@@ -1,5 +1,6 @@
 // server/app.js
 const express = require("express");
+const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const path = require("path");
 const db = require("./knex.js");
@@ -12,6 +13,7 @@ app.use(
 );
 
 // Serve static assets
+app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, "..", "build")));
 
 // ENDPOINTS

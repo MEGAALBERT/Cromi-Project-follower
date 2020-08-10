@@ -4,7 +4,7 @@ const defaultState={
 
 export function SET_PROJECTS(projects){
     return {
-        type: "SET_LOCATIONS",
+        type: "SET_PROJECTS",
         projects,
       };
     }
