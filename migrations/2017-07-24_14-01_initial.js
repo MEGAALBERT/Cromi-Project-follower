@@ -2,11 +2,15 @@ exports.up = function(knex) {
   return knex.schema.createTable("projects", (table) => {
     table.increments().index();
 
-    table.float("latitude");
+    table.text("project_name");
 
-    table.float("longitude");
+    table.text("description");
 
-    table.text("name").notNullable();
+    table.boolean("active");
+
+    table.text("contact_info");
+
+    table.text("image")
   });
 };
 
