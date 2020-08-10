@@ -25,6 +25,14 @@ async function getProjects(){
     console.log(projects)
 }
 
+async function getProjectsByName(name){
+    let req = await axios.get(`api/projects/${name}`);
+    const data = req.data;
+    console.log(data);
+    console.log(projects)
+    dispatch(SET_PROJECTS(data));
+    console.log(projects)
+}
 
 
     const myStyle = {
@@ -33,13 +41,15 @@ async function getProjects(){
     }
     return (
         <div className="main" style={ myStyle}>
-            <button onClick={getProjects}>Mostrar Proyectos</button>
+            <input type="text" className="form-control" />
+            <button type="submit" className="btn btn-primary" onClick={() => getProjectsByName("Hidratando")}>Buscar</button>
+            <button onClick={() => getProjects()}>Mostrar Todos los Proyectos</button>
             {projects.map(project => (
                 <span>
                 <h3>Proyecto: {project.project_name}</h3><br/>
                 <p>Descripcion: {project.description}</p><br/>
-                <p>Si esta interesado en apoyar al proyecto contactar : {project.contact_info}</p>
-                <img src={project.image} alt="projectImg" width="500" height="250"/>
+                <p>Si esta interesado en apoyar al proyecto contactar : <b>{project.contact_info}</b></p>
+                <img className="image"src={project.image} alt="projectImg" width="500" height="250"/>
                 </span>
             ))}
         </div>

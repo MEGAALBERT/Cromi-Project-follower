@@ -5,7 +5,10 @@ const cromiLogo = require("../images/CROMI1.jpg")
 function Header() {
     return (
         <div className="header">
-           <img src={cromiLogo} alt="logo" width="400" height="100" />
+            <button className="headerbtn">Inicio</button>
+            <button className="headerbtn">Historia</button>
+            <button className="headerbtn">Proyectos</button>
+           <img className="headerImg"src={cromiLogo} alt="logo" width="400" height="100" />
         </div>
     )
 }

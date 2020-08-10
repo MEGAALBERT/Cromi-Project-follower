@@ -16,7 +16,7 @@ app.use(
 app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, "..", "build")));
 
-// ENDPOINTS
+// ENDPOINTS----------------------------------------------------------------------------------
 app.get("/api/projects", async (req,res) => {
   try {
     console.log("/api/projects");
@@ -28,6 +28,19 @@ app.get("/api/projects", async (req,res) => {
   }
 });
 
+app.get("/api/projects/:name", async (req,res) => {
+  try {
+    const projects = await db
+      .select()
+      .table("projects")
+      .where("project_name", req.params.name);
+    res.json(projects)
+  } catch(err) {
+    console.error("Error loading locations!", err);
+    res.sendStatus(500);
+  }
+})
+// ENDPOINTS----------------------------------------------------------------------------------
 
 // Always return the main index.html, so react-router render the route in the client
 app.get("*", (req, res) => {

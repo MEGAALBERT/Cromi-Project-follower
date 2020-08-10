@@ -4,11 +4,62 @@
   grid-template: auto 1fr auto / auto 1fr auto;
 }
 
+h3 {
+  text-align: center;
+  background-color: #579CD6;
+  width: 300px;
+  border: 5px solid blue;
+  border-radius:20px;
+  padding: 10px;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  background-color: #56C7D8;
+  width: 300px;
+  border: 5px solid blue;
+  border-radius:20px;
+  padding: 15px;
+  margin: auto;
+}
+
+.image {
+  border: 5px solid #5CB761;
+  border-style: inset;
+  border-radius: 5%;
+}
+
+button {
+background:    #4e4eea;
+background:    linear-gradient(#4e4eea, #9900ff);
+border-radius: 11px;
+padding:       10px 20px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 15px/1 "Droid Serif", serif;
+text-align:    center;
+}
+
+label {
+  font: normal bold 15px/1 "Droid Serif", serif;
+}
+
 .header {
   background: white;
   padding: 2rem;
   grid-column: 1 / 4;
   text-align: center;
+}
+
+.headerbtn {
+  background:  #57D6D4;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.headerImg {
+  text-align: right;
 }
 
 .left-side {
