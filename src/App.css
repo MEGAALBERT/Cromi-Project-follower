@@ -21,6 +21,7 @@
   background: coral;
   grid-column: 2 / 3;
   text-align: center;
+  overflow-y: scroll;
 }
 
 .right-side {
@@ -29,7 +30,7 @@
   text-align: center;
 }
 
-footer {
+.footer {
   background: #2E54CD;
   padding: 2rem;
   text-align: center;

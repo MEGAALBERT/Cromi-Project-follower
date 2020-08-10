@@ -30,7 +30,6 @@ async function getProjects(){
     const myStyle = {
         backgroundImage :`url(${cromiBack})`,
         backgroundSize : "400px"
-
     }
     return (
         <div className="main" style={ myStyle}>
