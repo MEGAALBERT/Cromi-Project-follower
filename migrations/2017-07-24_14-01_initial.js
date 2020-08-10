@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-  return knex.schema.createTable("locations", (table) => {
+  return knex.schema.createTable("projects", (table) => {
     table.increments().index();
 
     table.float("latitude");

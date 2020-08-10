@@ -1,0 +1,45 @@
+[
+    {
+        "ProjectName": "Hidratando",
+        "Description": "Recorred vialidades principales y entregar agua a personas sin hogar y trabajando al aire libre",
+        "Active": true,
+        "contactInfo": "cromi@gmail.com",
+        "image": "https://radiohuancavilca.com.ec/wp-content/uploads/2019/04/thumbnail_2-5.jpg"
+    },
+    {
+        "ProjectName": "Noche Bohemia",
+        "Description": "Concierto al aire libre, el 16 de Noviembre del 2020 a recaudacion para el Bosque de la Ciudad",
+        "Active": true,
+        "contactInfo": "cromi@gmail.com",
+        "image": "https://www.cetys.mx/noticias/wp-content/uploads/2016/02/nocgebohemia1_gde.jpg"
+    },
+    {
+        "ProjectName": "Sorteo Cetys",
+        "Description": "Sorteo en recaudacion pro-becas para universidad CETYS de MEXICALI",
+        "Active": true,
+        "contactInfo": "cromi@gmail.com",
+        "image": "https://www.uniradioserver.com/media/news_thumbs/201905/20190524213813_131.jpg"
+    },
+    {
+        "ProjectName": "Clinica Villa Zapata",
+        "Description": "Clinica Gratuita para poblado Villa Zapata en Valle de Mexicali",
+        "Active": true,
+        "contactInfo": "cromi@gmail.com",
+        "image": "https://www.hospitalquirurgicodelvalle.com.mx/img/3532/321.jpg"
+    },
+    {
+        "ProjectName": "Comedor Valle del Yaqui",
+        "Description": "Comedor que ofrece desayunos a niños de bajos recursos en el Valle del Yaqui",
+        "Active": true,
+        "contactInfo": "cromi@gmail.com",
+        "image": "https://ntrzacatecas.com/content/uploads/2014/07/comedores-comunitarios.jpg"
+    },
+    {
+        "ProjectName": "Fundacion Marianita Curiel",
+        "Description": "Apoyo mensual a fundacion Marianita Curiel que apoya a familias sin hogar",
+        "Active": true,
+        "contactInfo": "cromi@gmail.com",
+        "image": "https://pbs.twimg.com/profile_images/1254999799973195777/TkxVAFi6_400x400.jpg"
+    },
+
+]
