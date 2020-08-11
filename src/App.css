@@ -15,15 +15,11 @@ h3 {
 }
 
 h2 {
-  color: red; 
-  font-family: 'Droid serif', serif; 
-  font-size: 35px; 
-  font-weight: 400; 
-  font-style: italic; 
-  line-height: 44px; 
-  margin: 0 0 12px; 
+  padding: 10px;
   text-align: center;
-  -webkit-text-stroke: 2px black;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }
 
 p {
@@ -102,15 +98,11 @@ label {
 }
 
 .storyTitle {
-  color: rgb(55, 172, 90); 
-  font-family: 'Droid serif', serif; 
-  font-size: 50px; 
-  font-weight: 400; 
-  font-style: italic; 
-  line-height: 44px; 
-  margin: 0 0 12px; 
+  padding: 10px;
   text-align: center;
-  -webkit-text-stroke: 1.5px black;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }
 
 .main {

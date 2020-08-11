@@ -33,7 +33,6 @@ async function getMembers(){
 
     return (
         <div className="left-side" style={myStyle}>
-            <h2>Miembros del Club</h2>
             <input id="memberValue" type="text" className="form-control" /><br/>
             <button type="submit" className="btn btn-primary" onClick={getMembers}>Buscar Miembros</button>
             {members.map(member =>(

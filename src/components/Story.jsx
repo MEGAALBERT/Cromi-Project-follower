@@ -11,7 +11,7 @@ export default function Story() {
     }
     return (
         <div className="main" style={myStyle}>
-            <h2 className="storyTitle">La historia de Club Rotario Industrial</h2>
+            <h2 className="storyTitle">Historia del Club Rotario Industrial</h2>
         </div>
     )
 }
