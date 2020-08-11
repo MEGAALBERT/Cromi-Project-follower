@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-
+// images
 const cromiBack = require("../images/backCromi.jpg");
 const logo = require("../images/emblem.svg");
 
