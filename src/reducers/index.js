@@ -2,6 +2,7 @@ const defaultState={
     projects: [],
     members: [],
     mainPage: "begin",
+    messages: [],
     contactName: "",
     contactEmail: "",
     contactMessage: ""
@@ -49,6 +50,13 @@ export function SET_CONTACT_MESSAGE(message){
     }
 } 
 
+export function SET_MESSAGES(messages){
+    return {
+        type: "SET_MESSAGES",
+        messages
+    }
+}
+
 const reducer = (state=defaultState, action)=> {
     switch (action.type) {
         case "SET_PROJECTS":
@@ -63,6 +71,8 @@ const reducer = (state=defaultState, action)=> {
              return {...state, contactEmail: action.payload};
         case "SET_CONTACT_MESSAGE":
               return {...state, contactMessage: action.payload};
+        case "SET_MESSAGES":
+              return {...state, messages: action.messages};
         default:
             return state;
     }

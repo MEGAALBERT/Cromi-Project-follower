@@ -7,6 +7,7 @@ import ContactFrom from "./components/ContactFrom";
 import Members from "./components/Members";
 import Story from "./components/Story";
 import Begin from "./components/Begin";
+import Messages from "./components/Messages";
 
 function App() {
 
@@ -23,6 +24,7 @@ const mainPage = useSelector((state)=> state.mainPage)
     : 
     <Story/>
     }
+    <Messages />
     <ContactFrom />
   </div>
   );
