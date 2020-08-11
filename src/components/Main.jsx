@@ -35,7 +35,7 @@ async function getProjectsByName(name){
 }
 
 const handleInput=()=>{
-    const value = document.getElementById("projectValue").value;
+    const value = document.getElementById("project").value;
     getProjectsByName(value);
 }
 
@@ -45,7 +45,7 @@ const handleInput=()=>{
     }
     return (
         <div className="main" style={ myStyle}>
-            <input id="projectValue" type="text" className="form-control" />
+            <input id="project" type="text" className="form-control" />
             <button type="submit" className="btn btn-primary" onClick={() => handleInput()}>Buscar</button>
             <button onClick={() => getProjects()}>Mostrar Todos los Proyectos</button>
             {projects.map(project => (

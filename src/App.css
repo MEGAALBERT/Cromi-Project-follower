@@ -24,6 +24,10 @@ p {
   margin: auto;
 }
 
+.members {
+  width: 200px;
+}
+
 .image {
   border: 5px solid #5CB761;
   border-style: inset;
@@ -67,6 +71,7 @@ label {
   background: #3ECBF5;
   grid-column: 1 / 2;
   text-align: center;
+  overflow-y: scroll;
 }
 
 .main {

@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="parent">
     <Header/>
-      <div className="left-side blue section" contenteditable>
       <Members />
-      </div>
     <Main/>
     <ContactFrom />
   </div>

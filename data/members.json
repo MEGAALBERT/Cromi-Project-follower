@@ -1,5 +1,50 @@
 [
     {
-        "name": "Alberto Medellin"
+        "name": "Alberto Medellin",
+        "mote": "Mochi",
+        "actividad": "Admin de Social Media",
+        "correo_electronico": "mochi@gmail.com"
+    },
+    {
+        "name": "Jesus Gallego",
+        "mote": "Pachis",
+        "actividad": "Attraccion de Nuevos Socios",
+        "correo_electronico": "pachis@gmail.com"
+    },
+    {
+        "name": "Pedro Ortiz",
+        "mote": "Foringon",
+        "actividad": "Macero",
+        "correo_electronico": "foringon@gmail.com"
+    },
+    {
+        "name": "Eduardo Medellin",
+        "mote": "Mus",
+        "actividad": "Recaudacion de Fondos",
+        "correo_electronico": "mus@gmail.com"
+    },
+    {
+        "name": "Patricio Hernandez",
+        "mote": "Pato",
+        "actividad": "Organizador de Eventos",
+        "correo_electronico": "pato@gmail.com"
+    },
+    {
+        "name": "Eduardo Bringas",
+        "mote": "Bonaprime",
+        "actividad": "Presidente del Club",
+        "correo_electronico": "lalobp@gmail.com"
+    },
+    {
+        "name": "Arturo Bastidas",
+        "mote": "Tury",
+        "actividad": "Tesorero",
+        "correo_electronico": "tury@gmail.com"
+    },
+    {
+        "name": "Jaime Naffarrete",
+        "mote": "Naffa",
+        "actividad": "Comunicacion al publico",
+        "correo_electronico": "jnaffa@gmail.com"
     }
 ]

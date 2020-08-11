@@ -40,6 +40,31 @@ app.get("/api/projects/:name", async (req,res) => {
     res.sendStatus(500);
   }
 })
+
+app.get("/api/members", async (req,res) => {
+  try {
+    console.log("/api/members");
+    const members = await db.select().table("members");
+    res.json(members);
+  } catch(err) {
+    console.error("Error loading location!", err);
+    res.sendStatus(500);
+  }
+});
+
+app.get("/api/members/:name", async (req,res) => {
+  try {
+    console.log("/api/members");
+    const members = await db
+      .select()
+      .table("members")
+      .where("mote", req.params.name);
+    res.json(members)
+  } catch(err) {
+    console.error("Error loading member!", err);
+    res.sendStatus(500);
+  }
+})
 // ENDPOINTS----------------------------------------------------------------------------------
 
 // Always return the main index.html, so react-router render the route in the client
