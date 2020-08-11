@@ -34,6 +34,10 @@ async function getProjectsByName(name){
     console.log(projects)
 }
 
+const handleInput=()=>{
+    const value = document.getElementById("projectValue").value;
+    getProjectsByName(value);
+}
 
     const myStyle = {
         backgroundImage :`url(${cromiBack})`,
@@ -41,8 +45,8 @@ async function getProjectsByName(name){
     }
     return (
         <div className="main" style={ myStyle}>
-            <input type="text" className="form-control" />
-            <button type="submit" className="btn btn-primary" onClick={() => getProjectsByName("Hidratando")}>Buscar</button>
+            <input id="projectValue" type="text" className="form-control" />
+            <button type="submit" className="btn btn-primary" onClick={() => handleInput()}>Buscar</button>
             <button onClick={() => getProjects()}>Mostrar Todos los Proyectos</button>
             {projects.map(project => (
                 <span>

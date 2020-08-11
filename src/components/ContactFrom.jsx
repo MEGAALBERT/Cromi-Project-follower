@@ -1,11 +1,16 @@
 import React from 'react'
 import '../App.css';
+const mex = require("../images/Mexicali.jpg");
 
 export default function ContactFrom() {
 
+    const myStyle = {
+        backgroundImage :`url(${mex})`,
+        backgroundSize : "450px"
+    }
 
     return (
-        <div className="footer">
+        <div className="footer" style={ myStyle}>
             <form id="contact-form" >
         <label htmlFor="name"> Nombre </label>
         <input type="text" className="form-control" />
