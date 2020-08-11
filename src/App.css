@@ -15,7 +15,7 @@ h3 {
 }
 
 h2 {
-  color: white; 
+  color: red; 
   font-family: 'Droid serif', serif; 
   font-size: 35px; 
   font-weight: 400; 
@@ -47,14 +47,25 @@ p {
 }
 
 button {
-background:    #4e4eea;
-background:    linear-gradient(#4e4eea, #9900ff);
-border-radius: 11px;
-padding:       10px 20px;
-color:         #ffffff;
-display:       inline-block;
-font:          normal bold 15px/1 "Droid Serif", serif;
-text-align:    center;
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 50;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: #404040 !important;
+font-weight: 500 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
 }
 
 label {
@@ -64,7 +75,7 @@ label {
 
 .header {
   background: white;
-  padding: 2rem;
+  padding: 10px;
   grid-column: 1 / 4;
   text-align: center;
 }
@@ -73,6 +84,10 @@ label {
   background:  #57D6D4;
   margin-right: 10px;
   margin-left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .headerImg {
@@ -87,7 +102,7 @@ label {
 }
 
 .storyTitle {
-  color: white; 
+  color: rgb(55, 172, 90); 
   font-family: 'Droid serif', serif; 
   font-size: 50px; 
   font-weight: 400; 
@@ -95,7 +110,7 @@ label {
   line-height: 44px; 
   margin: 0 0 12px; 
   text-align: center;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 1.5px black;
 }
 
 .main {
@@ -118,7 +133,7 @@ label {
 
 .footer {
   background: #2E54CD;
-  padding: 2rem;
+  padding: 10px;
   text-align: center;
   grid-column: 1 / 4;
 }
