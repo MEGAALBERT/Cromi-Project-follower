@@ -74,11 +74,27 @@ label {
   overflow-y: scroll;
 }
 
+.storyTitle {
+  color: white; 
+  font-family: 'Droid serif', serif; 
+  font-size: 50px; 
+  font-weight: 400; 
+  font-style: italic; 
+  line-height: 44px; 
+  margin: 0 0 12px; 
+  text-align: center;
+  -webkit-text-stroke: 2px black;
+}
+
 .main {
   background: coral;
   grid-column: 2 / 3;
   text-align: center;
   overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .right-side {

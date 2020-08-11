@@ -65,6 +65,16 @@ app.get("/api/members/:name", async (req,res) => {
     res.sendStatus(500);
   }
 })
+
+app.post("/api/members", async (req,res) => {
+  try {
+    const members = await db("members").insert(req.body, 'id');
+    res.json(members)
+  } catch(err) {
+    console.error("Error posting new member!", err);
+    res.sendStatus(500);
+  }
+})
 // ENDPOINTS----------------------------------------------------------------------------------
 
 // Always return the main index.html, so react-router render the route in the client
