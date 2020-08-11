@@ -27,6 +27,9 @@ async function handleSubmit(event){
         contact_email: contactEmail,
         contact_message: contactMessage
     })
+    dispatch(SET_CONTACT_NAME(""))
+    dispatch(SET_CONTACT_EMAIL(""))
+    dispatch(SET_CONTACT_MESSAGE(""))
     console.log(res);
 }
 
