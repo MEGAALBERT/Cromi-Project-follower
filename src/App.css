@@ -5,13 +5,11 @@
 }
 
 h3 {
-  text-align: center;
-  background-color: #579CD6;
-  width: 300px;
-  border: 5px solid blue;
-  border-radius:20px;
   padding: 10px;
-  margin: auto;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }
 
 h2 {
@@ -24,12 +22,13 @@ h2 {
 
 p {
   text-align: center;
-  background-color: #56C7D8;
+  background-color: #e2e0c7;
   width: 300px;
   border: 5px solid blue;
   border-radius:20px;
   padding: 15px;
   margin: auto;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .members {
@@ -70,6 +69,7 @@ label {
 }
 
 .header {
+  float: left;
   background: white;
   padding: 10px;
   grid-column: 1 / 4;
@@ -91,6 +91,7 @@ label {
 }
 
 .left-side {
+  float: left;
   background: #3ECBF5;
   grid-column: 1 / 2;
   text-align: center;
@@ -106,6 +107,7 @@ label {
 }
 
 .main {
+  float: left;
   background: coral;
   grid-column: 2 / 3;
   text-align: center;
@@ -117,6 +119,7 @@ label {
 }
 
 .right-side {
+  float: left;
   background: #3ECBF5;
   grid-column: 3 / 4;
   text-align: center;
@@ -124,8 +127,15 @@ label {
 }
 
 .footer {
+  float: left;
   background: #2E54CD;
   padding: 10px;
   text-align: center;
   grid-column: 1 / 4;
+}
+
+@media screen and (max-width:620px) {
+  .footer, .right-side, .left-side, .main, .storyTitle, .headerImg, .headerbtn, .header, p, h2, h3, .parent {
+    width: 100%;
+  }
 }
