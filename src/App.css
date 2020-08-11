@@ -8,7 +8,7 @@ h3 {
   padding: 10px;
   text-align: center;
   background: #1abc9c;
-  color: white;
+  color: rgb(245, 236, 217);
   font-size: 30px;
 }
 
@@ -16,7 +16,7 @@ h2 {
   padding: 10px;
   text-align: center;
   background: #1abc9c;
-  color: white;
+  color: rgb(245, 236, 217);
   font-size: 30px;
 }
 
@@ -39,6 +39,19 @@ p {
   border: 5px solid #5CB761;
   border-style: inset;
   border-radius: 5%;
+}
+
+.rotate {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 button {

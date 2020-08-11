@@ -14,7 +14,7 @@ export default function Begin() {
     return (
         <div className="main" style={myStyle}>
             <h1 className="storyTitle">Bienvenidos a CLUB ROTARIO MEXICALI INDUSTRIAL</h1>
-            <img src={logo} alt="Mexicali" /><br/>
+            <img className="rotate" src={logo} alt="Mexicali" /><br/>
             <h2 className="storyTitle">Login Solo para Miembros del Club</h2>
             <label htmlFor="name"> Correo Electronico </label>
             <input type="text" className="form-control" />
