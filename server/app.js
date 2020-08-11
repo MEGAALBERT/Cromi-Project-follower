@@ -75,6 +75,27 @@ app.post("/api/members", async (req,res) => {
     res.sendStatus(500);
   }
 })
+
+app.get("/api/messages", async (req,res) => {
+  try {
+    console.log("/api/messages");
+    const messages = await db.select().table("messages");
+    res.json(messages);
+  } catch(err) {
+    console.error("Error loading location!", err);
+    res.sendStatus(500);
+  }
+});
+
+app.post("/api/messages", async (req,res) => {
+  try {
+    const message = await db("messages").insert(req.body, '*');
+    res.json(message)
+  } catch(err) {
+    console.error("Error posting new member!", err);
+    res.sendStatus(500);
+  }
+})
 // ENDPOINTS----------------------------------------------------------------------------------
 
 // Always return the main index.html, so react-router render the route in the client

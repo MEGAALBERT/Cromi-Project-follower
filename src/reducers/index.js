@@ -1,7 +1,10 @@
 const defaultState={
     projects: [],
     members: [],
-    mainPage: "begin"
+    mainPage: "begin",
+    contactName: "",
+    contactEmail: "",
+    contactMessage: ""
 }
 
 export function SET_PROJECTS(projects){
@@ -25,6 +28,26 @@ export function SET_MAIN_PAGE(page){
            };
          }
     
+export function SET_CONTACT_NAME(name){
+    return {
+        type: "SET_CONTACT_NAME",
+        payload: name
+    }
+}   
+
+export function SET_CONTACT_EMAIL(email){
+    return {
+        type: "SET_CONTACT_EMAIL",
+        payload: email
+    }
+} 
+
+export function SET_CONTACT_MESSAGE(message){
+    return {
+        type: "SET_CONTACT_MESSAGE",
+        payload: message
+    }
+} 
 
 const reducer = (state=defaultState, action)=> {
     switch (action.type) {
@@ -34,9 +57,16 @@ const reducer = (state=defaultState, action)=> {
             return {...state, members: action.members};
         case "SET_MAIN_PAGE":
              return {...state, mainPage: action.payload};
+        case "SET_CONTACT_NAME":
+             return {...state, contactName: action.payload};
+        case "SET_CONTACT_EMAIL":
+             return {...state, contactEmail: action.payload};
+        case "SET_CONTACT_MESSAGE":
+              return {...state, contactMessage: action.payload};
         default:
             return state;
     }
 };
+
 
 export default reducer;
