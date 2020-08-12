@@ -41,13 +41,13 @@ This project is licensed under the MIT License
 
 ## Images of App
 
-### PRoject display
+### Project display
 
 ![image](/ProjectInfo.JPG)
 
 ### Cromi Members Dispay
 
-![image](/displayMembers.JPG)
+![image](/memberdisplay.JPG)
 
 ### Contact Form
 
