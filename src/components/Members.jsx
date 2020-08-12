@@ -36,10 +36,10 @@ async function getMembers(){
             <input id="memberValue" type="text" className="form-control" /><br/>
             <button type="submit" className="btn btn-primary" onClick={getMembers}>Buscar Miembros</button>
             {members.map(member =>(
-            <p className="members">Nombre: {member.member_name} <br />
-            Mote: {member.mote} <br />
-            Actividad en el club: {member.actividad} <br />
-            Correo Electronico: <a href='https://www.facebook.com/crmexicaliindustrial/'>{member.correo_electronico}</a>
+            <p className="members"><b>Nombre:</b> {member.member_name} <br />
+            <b>Mote:</b> {member.mote} <br />
+            <b>Actividad en el club:</b> {member.actividad} <br />
+            <b>Correo Electronico:</b> <a href='https://www.facebook.com/crmexicaliindustrial/'>{member.correo_electronico}</a>
             </p>
             ))}
         </div>

@@ -25,8 +25,8 @@ const messages = useSelector((state)=> state.messages);
         <div className="right-side" style={myStyle} >
            <button type="submit" className="btn btn-primary" onClick={getMessages}>Mensajes</button>
             {messages.map(message => (
-                <p className="members">Nombre: {message.contact_name} <br />
-                Email {message.contact_email} <br />
+                <p className="members"><b>Nombre:</b> {message.contact_name} <br />
+                <b>Email </b>{message.contact_email} <br />
                 {message.contact_message} <br />
                 </p>
             ))}

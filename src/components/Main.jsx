@@ -51,8 +51,8 @@ const handleInput=()=>{
             {projects.map(project => (
                 <span>
                 <h3>Proyecto: {project.project_name}</h3><br/>
-                <p>Descripcion: {project.description}</p><br/>
-                <p>Si esta interesado en apoyar al proyecto contactar : <b>{project.contact_info}</b></p>
+                <p><b>Descripcion:</b> {project.description}</p><br/>
+                <p>Si esta interesado en apoyar al proyecto contactar :<a href='https://www.facebook.com/crmexicaliindustrial/'> <b>{project.contact_info}</b></a></p>
                 <img className="image"src={project.image} alt="projectImg" width="500" height="250"/>
                 </span>
             ))}
