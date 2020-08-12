@@ -5,7 +5,9 @@ const defaultState={
     messages: [],
     contactName: "",
     contactEmail: "",
-    contactMessage: ""
+    contactMessage: "",
+    memberPassword: "",
+    memberEmail: ""
 }
 
 export function SET_PROJECTS(projects){
@@ -57,6 +59,20 @@ export function SET_MESSAGES(messages){
     }
 }
 
+export function SET_MEMBER_PASSWORD(password){
+    return {
+        type: "SET_MEMBER_PASSWORD",
+        password
+    }
+}
+
+export function SET_MEMBER_EMAIL(email){
+    return {
+        type: "SET_MEMBER_EMAIL",
+        email
+    }
+}
+
 const reducer = (state=defaultState, action)=> {
     switch (action.type) {
         case "SET_PROJECTS":
@@ -73,6 +89,10 @@ const reducer = (state=defaultState, action)=> {
               return {...state, contactMessage: action.payload};
         case "SET_MESSAGES":
               return {...state, messages: action.messages};
+        case "SET_MEMBER_EMAIL":
+            return {...state, memberEmail: action.email};
+        case "SET_MEMBER_PASSWORD":
+            return {...state, memberPassword: action.password}
         default:
             return state;
     }
